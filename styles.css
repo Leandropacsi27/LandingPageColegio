@@ -1,0 +1,25 @@
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    
+    /* Animación del drawer */
+    .drawer {
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(-100%);
+    }
+    
+    .drawer.open {
+      transform: translateX(0);
+    }
+    
+    /* Animación del overlay */
+    .overlay {
+      transition: opacity 0.3s ease-in-out;
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+    .overlay.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
